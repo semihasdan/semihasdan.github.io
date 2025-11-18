@@ -1,38 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="light" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semih Aşdan | Mobile App Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Semih Aşdan - Software Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2463eb",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                        "card-light": "#ffffff",
+                        "card-dark": "#181f2b",
+                        "text-primary-light": "#1d1d1f",
+                        "text-primary-dark": "#f0f2f5",
+                        "text-secondary-light": "#6e6e73",
+                        "text-secondary-dark": "#94a3b8",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <div class="container">
-        <header class="hero">
-            <img src="https://drive.google.com/thumbnail?id=1jP60nDD8-5ERAS9Xes3SHqWJGKuYC66W" alt="Semih Aşdan" class="profile-pic">
-            <h1>Semih Aşdan</h1>
-            <p>Mobile App Developer</p>
-        </header>
 
-        <main>
-            <section id="project" class="project-showcase">
-                <h2>My Project</h2>
-                <div class="project-card">
-                    <h3>Geø Flag</h3>
-                    <p>A geography-based guessing game.</p>
-                    <!-- More project details can be added here -->
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-text-primary-light dark:text-text-primary-dark">
+    <div class="relative flex min-h-screen w-full flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+        <main class="w-full max-w-5xl">
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+                <!-- Card 1: Identity & Socials -->
+                <div
+                    class="flex flex-col justify-between rounded-xl bg-card-light dark:bg-card-dark p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-none sm:col-span-2 lg:p-8">
+                    <div>
+                        <h1
+                            class="text-4xl font-bold tracking-tighter text-text-primary-light dark:text-text-primary-dark sm:text-5xl md:text-6xl">
+                            Semih Aşdan</h1>
+                        <p class="mt-2 text-lg text-text-secondary-light dark:text-text-secondary-dark sm:text-xl">
+                            <a href="https://www.pusulayazilim.com.tr/" target="_blank"
+                                class="hover:text-primary transition-colors underline decoration-primary/30 hover:decoration-primary">Software
+                                Engineer at Pusula</a>
+                        </p>
+                    </div>
+                    <div class="mt-6 flex gap-4">
+                        <a href="https://github.com/semihasdan" target="_blank"
+                            class="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary dark:hover:text-primary transition-colors">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/semihasdan" target="_blank"
+                            class="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary dark:hover:text-primary transition-colors">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="mailto:semih.asdan@gmail.com"
+                            class="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary dark:hover:text-primary transition-colors">
+                            <i class="fas fa-envelope text-2xl"></i>
+                        </a>
+                    </div>
                 </div>
-            </section>
 
-            <section id="contact" class="contact-section">
-                <h2>Get In Touch</h2>
-                <p>You can reach me at: <a href="mailto:semih.asdan@gmail.com">semih.asdan@gmail.com</a></p>
-            </section>
+                <!-- Card 2: Photo -->
+                <div
+                    class="flex items-center justify-center rounded-xl bg-card-light dark:bg-card-dark p-4 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-none sm:col-span-2">
+                    <div class="aspect-square w-full rounded-lg bg-cover bg-center"
+                        data-alt="Professional headshot of Semih Aşdan"
+                        style="background-image: url('assets/profile.jpeg')"></div>
+                </div>
+
+                <!-- Card 3: Featured Project (Geo Flag) -->
+                <div
+                    class="group relative flex flex-col justify-between overflow-hidden rounded-xl bg-gradient-to-br from-blue-200 to-indigo-300 p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:from-blue-900 dark:to-indigo-900 dark:shadow-none sm:col-span-2 lg:col-span-4 lg:flex-row lg:items-center lg:gap-8">
+                    <div class="z-10 text-slate-900 dark:text-white lg:max-w-md">
+                        <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Geø Flag</h2>
+                        <p class="mt-1 text-base font-medium opacity-80">Discover the world with this interactive flag
+                            guessing game.</p>
+                        <a href="https://apps.apple.com/us/app/ge%C3%B8-flag/id6754101610" target="_blank"
+                            class="mt-4 flex w-fit cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full bg-slate-900/80 px-4 py-2 text-sm font-semibold text-white backdrop-blur-sm transition-all hover:bg-slate-900/90 dark:bg-white/80 dark:text-slate-900 dark:hover:bg-white/90">
+                            <i class="fab fa-apple text-lg"></i>
+                            <span>Download on the App Store</span>
+                        </a>
+                    </div>
+                    <img alt="Geø Flag App Icon"
+                        class="mt-6 w-40 self-center rounded-2xl shadow-lg transition-transform duration-300 group-hover:scale-105 lg:absolute lg:right-12 lg:mt-0 lg:w-48"
+                        src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fd/4b/5b/fd4b5b44-faf8-77ff-0716-fbf68b19b773/AppIcon-0-0-1x_U007epad-0-1-85-220.png/400x400ia-75.webp" />
+                </div>
+
+                <!-- Card 4: Technical Project (Rehab) -->
+                <div
+                    class="flex flex-col rounded-xl bg-card-light dark:bg-card-dark p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-none sm:col-span-2 lg:col-span-2">
+                    <div class="h-48 w-full rounded-lg bg-cover bg-center"
+                        style="background-image: url('https://private-user-images.githubusercontent.com/105613599/486462775-badea570-2d33-48a6-9ef1-30455eb1fbe0.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjM0OTU0ODMsIm5iZiI6MTc2MzQ5NTE4MywicGF0aCI6Ii8xMDU2MTM1OTkvNDg2NDYyNzc1LWJhZGVhNTcwLTJkMzMtNDhhNi05ZWYxLTMwNDU1ZWIxZmJlMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExOFQxOTQ2MjNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNmY3ZDk5NjE4NzdhYWUzZmZjYWQ2MWI3YWE1M2Q5M2RkMjJlOGM1ZTUzMGU1NDE4ZGQ3M2ZjZDExZWQyMmY1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.tmFD6XBa2VSALodUFJhRjnxJ-oMhUsWy9LQCt0ZIQTU')">
+                    </div>
+                    <div class="mt-4 flex flex-col">
+                        <p
+                            class="text-lg font-bold leading-tight tracking-tight text-text-primary-light dark:text-text-primary-dark">
+                            Rehabilitation Data Analysis</p>
+                        <p class="mt-1 text-base text-text-secondary-light dark:text-text-secondary-dark">ML project
+                            predicting treatment duration using Python & Scikit-learn.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5: Metro Algorithm -->
+                <div
+                    class="flex flex-col rounded-xl bg-card-light dark:bg-card-dark p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-none sm:col-span-1 lg:col-span-1">
+                    <div class="h-32 w-full rounded-lg bg-cover bg-center"
+                        style="background-image: url('https://private-user-images.githubusercontent.com/105613599/399171668-5d6bdf14-9d05-4eb9-b93e-ffda8d260d30.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjM0OTU0NDMsIm5iZiI6MTc2MzQ5NTE0MywicGF0aCI6Ii8xMDU2MTM1OTkvMzk5MTcxNjY4LTVkNmJkZjE0LTlkMDUtNGViOS1iOTNlLWZmZGE4ZDI2MGQzMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExOFQxOTQ1NDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mM2VkZDc1YWU5NDUzYTM2YjhhZmFjYjVlYTI3YjViZjY5MmI0NGIyNDZlMTg5NDdlZWIzNzc2OTg2NjIxNTRiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.dF479YgY918cMYIXg-QGNY5vzjLAHY5fLMTVoTjwKlg')">
+                    </div>
+                    <div class="mt-4 flex flex-col">
+                        <p
+                            class="text-lg font-bold leading-tight tracking-tight text-text-primary-light dark:text-text-primary-dark">
+                            Metro Algorithm</p>
+                        <p class="mt-1 text-sm text-text-secondary-light dark:text-text-secondary-dark">Optimal
+                            pathfinding for Istanbul metro.</p>
+                    </div>
+                </div>
+
+                <!-- Card 6: Dio Coin -->
+                <div
+                    class="flex flex-col rounded-xl bg-card-light dark:bg-card-dark p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-none sm:col-span-1 lg:col-span-1">
+                    <div class="h-32 w-full rounded-lg bg-cover bg-center"
+                        style="background-image: url('https://raw.githubusercontent.com/semihasdan/Dio-Coin/main/assets/icon.png')">
+                    </div>
+                    <div class="mt-4 flex flex-col">
+                        <p
+                            class="text-lg font-bold leading-tight tracking-tight text-text-primary-light dark:text-text-primary-dark">
+                            Dio Coin</p>
+                        <p class="mt-1 text-sm text-text-secondary-light dark:text-text-secondary-dark">Crypto exchange
+                            data mobile app.</p>
+                    </div>
+                </div>
+
+                <!-- Card 7: Education -->
+                <div
+                    class="flex flex-col rounded-xl bg-card-light dark:bg-card-dark p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-none sm:col-span-2 lg:col-span-4">
+                    <h3
+                        class="text-lg font-bold leading-tight tracking-tight text-text-primary-light dark:text-text-primary-dark mb-4">
+                        Education</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div
+                            class="flex items-center gap-3 p-3 rounded-lg bg-background-light dark:bg-background-dark/50">
+                            <span class="material-symbols-outlined flex-shrink-0 text-primary text-2xl">school</span>
+                            <div>
+                                <p class="font-bold text-text-primary-light dark:text-text-primary-dark">Nişantaşı
+                                    University</p>
+                                <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Software
+                                    Engineering (2020-2025)</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 p-3 rounded-lg bg-background-light dark:bg-background-dark/50">
+                            <span class="material-symbols-outlined flex-shrink-0 text-primary text-2xl">language</span>
+                            <div>
+                                <p class="font-bold text-text-primary-light dark:text-text-primary-dark">ACE English
+                                    School, Malta</p>
+                                <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Intensive
+                                    English (2023)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
-    <script src="script.js"></script>
 </body>
+
 </html>
