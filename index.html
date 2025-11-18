@@ -5,13 +5,14 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Semih Aşdan - Software Engineer Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <!-- Font Awesome for Social Icons -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,14 +24,18 @@
                 extend: {
                     colors: {
                         "primary": "#2463eb",
-                        "background-light": "#f6f6f8",
-                        "background-dark": "#111621",
+                        "background-light": "#f3f4f6",
+                        "background-dark": "#0f172a",
                         "card-light": "#ffffff",
-                        "card-dark": "#181f2b",
-                        "text-primary-light": "#1d1d1f",
-                        "text-primary-dark": "#f0f2f5",
-                        "text-secondary-light": "#6e6e73",
+                        "card-dark": "#1e293b",
+                        "text-primary-light": "#111827",
+                        "text-primary-dark": "#f8fafc",
+                        "text-secondary-light": "#4b5563",
                         "text-secondary-dark": "#94a3b8",
+                        "accent-identity-light": "#ffffff",
+                        "accent-identity-dark": "#1e293b",
+                        "accent-education-light": "#e0f2fe",
+                        "accent-education-dark": "#172554",
                     },
                     fontFamily: {
                         "display": ["Inter", "sans-serif"]
@@ -39,6 +44,7 @@
                         "DEFAULT": "0.5rem",
                         "lg": "1rem",
                         "xl": "1.5rem",
+                        "2xl": "2rem",
                         "full": "9999px"
                     },
                 },
@@ -53,140 +59,172 @@
 </head>
 
 <body
-    class="bg-background-light dark:bg-background-dark font-display text-text-primary-light dark:text-text-primary-dark">
-    <div class="relative flex min-h-screen w-full flex-col items-center justify-center p-4 sm:p-6 md:p-8">
-        <main class="w-full max-w-5xl">
-            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-                <!-- Card 1: Identity & Socials -->
-                <div
-                    class="flex flex-col justify-between rounded-xl bg-card-light dark:bg-card-dark p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-none sm:col-span-2 lg:p-8">
+    class="bg-background-light dark:bg-background-dark font-display text-text-primary-light dark:text-text-primary-dark min-h-screen flex justify-center">
+    <div class="w-full max-w-6xl p-4 sm:p-6 md:p-10">
+        <main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            
+            <div
+                class="flex flex-col-reverse sm:flex-row items-center justify-between rounded-2xl bg-accent-identity-light dark:bg-accent-identity-dark p-8 shadow-lg dark:shadow-slate-900/50 sm:col-span-2 lg:col-span-2 border border-gray-100 dark:border-slate-700">
+                <div class="flex flex-col items-center sm:items-start text-center sm:text-left mt-6 sm:mt-0 gap-4">
                     <div>
                         <h1
-                            class="text-4xl font-bold tracking-tighter text-text-primary-light dark:text-text-primary-dark sm:text-5xl md:text-6xl">
+                            class="text-4xl sm:text-5xl font-black tracking-tight text-text-primary-light dark:text-text-primary-dark">
                             Semih Aşdan</h1>
-                        <p class="mt-2 text-lg text-text-secondary-light dark:text-text-secondary-dark sm:text-xl">
+                        <p class="mt-2 text-lg font-medium text-primary">
                             <a href="https://www.pusulayazilim.com.tr/" target="_blank"
-                                class="hover:text-primary transition-colors underline decoration-primary/30 hover:decoration-primary">Software
-                                Engineer at Pusula</a>
+                                class="hover:underline decoration-2 underline-offset-2">Software Engineer at Pusula</a>
                         </p>
                     </div>
-                    <div class="mt-6 flex gap-4">
+                    <div class="flex gap-5">
                         <a href="https://github.com/semihasdan" target="_blank"
-                            class="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary dark:hover:text-primary transition-colors">
-                            <i class="fab fa-github text-2xl"></i>
+                            class="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary dark:hover:text-primary transition-colors transform hover:scale-110">
+                            <i class="fab fa-github text-3xl"></i>
                         </a>
                         <a href="https://linkedin.com/in/semihasdan" target="_blank"
-                            class="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary dark:hover:text-primary transition-colors">
-                            <i class="fab fa-linkedin text-2xl"></i>
+                            class="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary dark:hover:text-primary transition-colors transform hover:scale-110">
+                            <i class="fab fa-linkedin text-3xl"></i>
                         </a>
                         <a href="mailto:semih.asdan@gmail.com"
-                            class="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary dark:hover:text-primary transition-colors">
-                            <i class="fas fa-envelope text-2xl"></i>
+                            class="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary dark:hover:text-primary transition-colors transform hover:scale-110">
+                            <i class="fas fa-envelope text-3xl"></i>
                         </a>
                     </div>
                 </div>
-
-                <!-- Card 2: Photo -->
-                <div
-                    class="flex items-center justify-center rounded-xl bg-card-light dark:bg-card-dark p-4 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-none sm:col-span-2">
-                    <div class="aspect-square w-full rounded-lg bg-cover bg-center"
-                        data-alt="Professional headshot of Semih Aşdan"
-                        style="background-image: url('assets/profile.jpeg')"></div>
+                <div class="relative w-32 h-32 sm:w-40 sm:h-40 flex-shrink-0">
+                    <div class="absolute inset-0 bg-primary rounded-full blur-lg opacity-20 animate-pulse"></div>
+                    <img src="assets/profile.jpeg" alt="Semih Aşdan"
+                        class="relative w-full h-full object-cover rounded-full border-4 border-white dark:border-slate-800 shadow-md">
                 </div>
+            </div>
 
-                <!-- Card 3: Featured Project (Geo Flag) -->
-                <div
-                    class="group relative flex flex-col justify-between overflow-hidden rounded-xl bg-gradient-to-br from-blue-200 to-indigo-300 p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:from-blue-900 dark:to-indigo-900 dark:shadow-none sm:col-span-2 lg:col-span-4 lg:flex-row lg:items-center lg:gap-8">
-                    <div class="z-10 text-slate-900 dark:text-white lg:max-w-md">
-                        <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Geø Flag</h2>
-                        <p class="mt-1 text-base font-medium opacity-80">Discover the world with this interactive flag
-                            guessing game.</p>
-                        <a href="https://apps.apple.com/us/app/ge%C3%B8-flag/id6754101610" target="_blank"
-                            class="mt-4 flex w-fit cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full bg-slate-900/80 px-4 py-2 text-sm font-semibold text-white backdrop-blur-sm transition-all hover:bg-slate-900/90 dark:bg-white/80 dark:text-slate-900 dark:hover:bg-white/90">
-                            <i class="fab fa-apple text-lg"></i>
-                            <span>Download on the App Store</span>
-                        </a>
+            
+            <div
+                class="flex flex-col justify-center rounded-2xl bg-accent-education-light dark:bg-accent-education-dark p-8 shadow-md dark:shadow-none sm:col-span-1 border border-blue-100 dark:border-blue-900">
+                <h3
+                    class="text-xl font-bold text-text-primary-light dark:text-text-primary-dark mb-6 flex items-center gap-2">
+                    <span class="material-symbols-outlined">school</span> Education
+                </h3>
+                <div class="flex flex-col gap-6">
+                    <div class="relative pl-4 border-l-2 border-primary/30">
+                        <p class="text-base font-bold leading-tight">Nişantaşı University</p>
+                        <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark mt-1">Software
+                            Engineering</p>
+                        <span class="text-xs font-medium text-primary mt-1 block">2020 - 2025</span>
                     </div>
-                    <img alt="Geø Flag App Icon"
-                        class="mt-6 w-40 self-center rounded-2xl shadow-lg transition-transform duration-300 group-hover:scale-105 lg:absolute lg:right-12 lg:mt-0 lg:w-48"
-                        src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fd/4b/5b/fd4b5b44-faf8-77ff-0716-fbf68b19b773/AppIcon-0-0-1x_U007epad-0-1-85-220.png/400x400ia-75.webp" />
-                </div>
-
-                <!-- Card 4: Technical Project (Rehab) -->
-                <div
-                    class="flex flex-col rounded-xl bg-card-light dark:bg-card-dark p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-none sm:col-span-2 lg:col-span-2">
-                    <div class="h-48 w-full rounded-lg bg-cover bg-center"
-                        style="background-image: url('https://private-user-images.githubusercontent.com/105613599/486462775-badea570-2d33-48a6-9ef1-30455eb1fbe0.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjM0OTU0ODMsIm5iZiI6MTc2MzQ5NTE4MywicGF0aCI6Ii8xMDU2MTM1OTkvNDg2NDYyNzc1LWJhZGVhNTcwLTJkMzMtNDhhNi05ZWYxLTMwNDU1ZWIxZmJlMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExOFQxOTQ2MjNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNmY3ZDk5NjE4NzdhYWUzZmZjYWQ2MWI3YWE1M2Q5M2RkMjJlOGM1ZTUzMGU1NDE4ZGQ3M2ZjZDExZWQyMmY1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.tmFD6XBa2VSALodUFJhRjnxJ-oMhUsWy9LQCt0ZIQTU')">
-                    </div>
-                    <div class="mt-4 flex flex-col">
-                        <p
-                            class="text-lg font-bold leading-tight tracking-tight text-text-primary-light dark:text-text-primary-dark">
-                            Rehabilitation Data Analysis</p>
-                        <p class="mt-1 text-base text-text-secondary-light dark:text-text-secondary-dark">ML project
-                            predicting treatment duration using Python & Scikit-learn.</p>
-                    </div>
-                </div>
-
-                <!-- Card 5: Metro Algorithm -->
-                <div
-                    class="flex flex-col rounded-xl bg-card-light dark:bg-card-dark p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-none sm:col-span-1 lg:col-span-1">
-                    <div class="h-32 w-full rounded-lg bg-cover bg-center"
-                        style="background-image: url('https://private-user-images.githubusercontent.com/105613599/399171668-5d6bdf14-9d05-4eb9-b93e-ffda8d260d30.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjM0OTU0NDMsIm5iZiI6MTc2MzQ5NTE0MywicGF0aCI6Ii8xMDU2MTM1OTkvMzk5MTcxNjY4LTVkNmJkZjE0LTlkMDUtNGViOS1iOTNlLWZmZGE4ZDI2MGQzMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExOFQxOTQ1NDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mM2VkZDc1YWU5NDUzYTM2YjhhZmFjYjVlYTI3YjViZjY5MmI0NGIyNDZlMTg5NDdlZWIzNzc2OTg2NjIxNTRiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.dF479YgY918cMYIXg-QGNY5vzjLAHY5fLMTVoTjwKlg')">
-                    </div>
-                    <div class="mt-4 flex flex-col">
-                        <p
-                            class="text-lg font-bold leading-tight tracking-tight text-text-primary-light dark:text-text-primary-dark">
-                            Metro Algorithm</p>
-                        <p class="mt-1 text-sm text-text-secondary-light dark:text-text-secondary-dark">Optimal
-                            pathfinding for Istanbul metro.</p>
-                    </div>
-                </div>
-
-                <!-- Card 6: Dio Coin -->
-                <div
-                    class="flex flex-col rounded-xl bg-card-light dark:bg-card-dark p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-none sm:col-span-1 lg:col-span-1">
-                    <div class="h-32 w-full rounded-lg bg-cover bg-center"
-                        style="background-image: url('https://raw.githubusercontent.com/semihasdan/Dio-Coin/main/assets/icon.png')">
-                    </div>
-                    <div class="mt-4 flex flex-col">
-                        <p
-                            class="text-lg font-bold leading-tight tracking-tight text-text-primary-light dark:text-text-primary-dark">
-                            Dio Coin</p>
-                        <p class="mt-1 text-sm text-text-secondary-light dark:text-text-secondary-dark">Crypto exchange
-                            data mobile app.</p>
-                    </div>
-                </div>
-
-                <!-- Card 7: Education -->
-                <div
-                    class="flex flex-col rounded-xl bg-card-light dark:bg-card-dark p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-none sm:col-span-2 lg:col-span-4">
-                    <h3
-                        class="text-lg font-bold leading-tight tracking-tight text-text-primary-light dark:text-text-primary-dark mb-4">
-                        Education</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div
-                            class="flex items-center gap-3 p-3 rounded-lg bg-background-light dark:bg-background-dark/50">
-                            <span class="material-symbols-outlined flex-shrink-0 text-primary text-2xl">school</span>
-                            <div>
-                                <p class="font-bold text-text-primary-light dark:text-text-primary-dark">Nişantaşı
-                                    University</p>
-                                <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Software
-                                    Engineering (2020-2025)</p>
-                            </div>
-                        </div>
-                        <div
-                            class="flex items-center gap-3 p-3 rounded-lg bg-background-light dark:bg-background-dark/50">
-                            <span class="material-symbols-outlined flex-shrink-0 text-primary text-2xl">language</span>
-                            <div>
-                                <p class="font-bold text-text-primary-light dark:text-text-primary-dark">ACE English
-                                    School, Malta</p>
-                                <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Intensive
-                                    English (2023)</p>
-                            </div>
-                        </div>
+                    <div class="relative pl-4 border-l-2 border-primary/30">
+                        <p class="text-base font-bold leading-tight">ACE English School</p>
+                        <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark mt-1">Malta, Intensive
+                            English</p>
+                        <span class="text-xs font-medium text-primary mt-1 block">2023</span>
                     </div>
                 </div>
             </div>
+
+            
+            <div
+                class="group relative flex flex-col justify-between overflow-hidden rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-700 p-8 shadow-lg sm:col-span-2 lg:col-span-2 text-white">
+                <div class="z-10 lg:max-w-md">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-xs font-bold mb-4">
+                        <span class="material-symbols-outlined text-sm">star</span> Featured
+                    </div>
+                    <h2 class="text-3xl font-bold tracking-tight">Geø Flag</h2>
+                    <p class="mt-2 text-lg font-medium text-blue-100">Discover the world with this interactive flag
+                        guessing game.</p>
+                    <a href="https://apps.apple.com/us/app/ge%C3%B8-flag/id6754101610" target="_blank"
+                        class="mt-6 flex w-fit cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-xl bg-white text-blue-700 px-5 py-3 text-sm font-bold transition-transform hover:scale-105 shadow-xl">
+                        <i class="fab fa-apple text-xl"></i>
+                        <span>Download on App Store</span>
+                    </a>
+                </div>
+                <img alt="Geø Flag App Icon"
+                    class="absolute -right-6 -bottom-6 w-48 sm:w-64 rounded-3xl shadow-2xl transform rotate-12 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105"
+                    src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fd/4b/5b/fd4b5b44-faf8-77ff-0716-fbf68b19b773/AppIcon-0-0-1x_U007epad-0-1-85-220.png/400x400ia-75.webp" />
+            </div>
+
+            
+            <div
+                class="group relative flex flex-col rounded-2xl bg-card-light dark:bg-card-dark p-0 shadow-md dark:shadow-none sm:col-span-1 overflow-hidden border border-gray-100 dark:border-slate-800 hover:shadow-xl transition-shadow">
+                <div class="h-48 w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                    style="background-image: url('https://private-user-images.githubusercontent.com/105613599/486462775-badea570-2d33-48a6-9ef1-30455eb1fbe0.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjM0OTU0ODMsIm5iZiI6MTc2MzQ5NTE4MywicGF0aCI6Ii8xMDU2MTM1OTkvNDg2NDYyNzc1LWJhZGVhNTcwLTJkMzMtNDhhNi05ZWYxLTMwNDU1ZWIxZmJlMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExOFQxOTQ2MjNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNmY3ZDk5NjE4NzdhYWUzZmZjYWQ2MWI3YWE1M2Q5M2RkMjJlOGM1ZTUzMGU1NDE4ZGQ3M2ZjZDExZWQyMmY1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.tmFD6XBa2VSALodUFJhRjnxJ-oMhUsWy9LQCt0ZIQTU')">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="material-symbols-outlined text-primary">analytics</span>
+                        <p class="text-lg font-bold leading-tight">Rehabilitation Data</p>
+                    </div>
+                    <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark line-clamp-3">Machine
+                        learning project predicting treatment duration using Python & Scikit-learn.</p>
+                </div>
+            </div>
+
+            
+            <a href="https://github.com/semihasdan/IMMRB-Istanbul-Metrodan-Metroya-Rota-Bulucu" target="_blank"
+                class="group relative flex flex-col rounded-2xl bg-card-light dark:bg-card-dark p-0 shadow-md dark:shadow-none sm:col-span-1 overflow-hidden border border-gray-100 dark:border-slate-800 hover:shadow-xl transition-shadow">
+                <div class="h-48 w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                    style="background-image: url('assets/metroPNG.png')"></div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="material-symbols-outlined text-purple-500">route</span>
+                        <p class="text-lg font-bold leading-tight">Metro Algorithm</p>
+                    </div>
+                    <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark line-clamp-3">Optimal
+                        pathfinding algorithm for Istanbul's metro system.</p>
+                </div>
+            </a>
+
+            
+            <a href="https://github.com/semihasdan/Dio-Coin" target="_blank"
+                class="group relative flex flex-col rounded-2xl bg-card-light dark:bg-card-dark p-0 shadow-md dark:shadow-none sm:col-span-1 overflow-hidden border border-gray-100 dark:border-slate-800 hover:shadow-xl transition-shadow">
+                <div class="h-48 w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                    style="background-image: url('assets/dioCoinPNG.png')"></div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="material-symbols-outlined text-yellow-500">currency_bitcoin</span>
+                        <p class="text-lg font-bold leading-tight">Dio Coin</p>
+                    </div>
+                    <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Crypto exchange data
+                        mobile app.</p>
+                </div>
+            </a>
+
+            
+            <div
+                class="flex flex-col rounded-2xl bg-card-light dark:bg-card-dark p-6 shadow-md dark:shadow-none sm:col-span-1 border border-gray-100 dark:border-slate-800 hover:border-green-500/50 transition-colors group">
+                <a href="https://github.com/semihasdan/WorldGuessGame" target="_blank" class="flex flex-col h-full">
+                    <div class="flex items-center justify-between mb-4">
+                        <div
+                            class="flex items-center justify-center h-12 w-12 rounded-xl bg-green-100 dark:bg-green-900/20 text-green-600 dark:text-green-400">
+                            <span class="material-symbols-outlined text-2xl">public</span>
+                        </div>
+                        <span
+                            class="material-symbols-outlined text-gray-300 group-hover:text-green-500 transition-colors">arrow_outward</span>
+                    </div>
+                    <p class="text-lg font-bold leading-tight mb-2">WorldGuessGame</p>
+                    <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Geography quiz web game
+                        with Street View.</p>
+                </a>
+            </div>
+
+            
+            <div
+                class="flex flex-col rounded-2xl bg-card-light dark:bg-card-dark p-6 shadow-md dark:shadow-none sm:col-span-1 border border-gray-100 dark:border-slate-800 hover:border-teal-500/50 transition-colors group">
+                <a href="https://github.com/semihasdan/Rick-and-Morty" target="_blank" class="flex flex-col h-full">
+                    <div class="flex items-center justify-between mb-4">
+                        <div
+                            class="flex items-center justify-center h-12 w-12 rounded-xl bg-teal-100 dark:bg-teal-900/20 text-teal-600 dark:text-teal-400">
+                            <span class="material-symbols-outlined text-2xl">smart_toy</span>
+                        </div>
+                        <span
+                            class="material-symbols-outlined text-gray-300 group-hover:text-teal-500 transition-colors">arrow_outward</span>
+                    </div>
+                    <p class="text-lg font-bold leading-tight mb-2">Rick & Morty App</p>
+                    <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">React Native companion
+                        app.</p>
+                </a>
+            </div>
+
         </main>
     </div>
 </body>
